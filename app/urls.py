@@ -1,16 +1,16 @@
 from django.contrib import admin
 from django.urls import path
-from . import views
+from . import favoritos
 
 urlpatterns = [
-    path('', views.index_page, name='index-page'),
-    path('login/', views.index_page, name='login'),
-    path('home/', views.home, name='home'),
-    path('buscar/', views.search, name='buscar'),
+    path('', favoritos.index_page, name='index-page'),
+    path('login/', favoritos.index_page, name='login'),
+    path('home/', favoritos.home, name='home'),
+    path('buscar/', favoritos.search, name='buscar'),
 
-    path('favourites/', views.getAllFavouritesByUser, name='favoritos'),
-    path('favourites/add/', views.saveFavourite, name='agregar-favorito'),
-    path('favourites/delete/', views.deleteFavourite, name='borrar-favorito'),
+    path('favourites/', favoritos.getAllFavouritesByUser, name='favoritos'),
+    path('favourites/add/', favoritos.saveFavourite, name='agregar-favorito'),
+    path('favourites/delete/', favoritos.deleteFavourite, name='borrar-favorito'),
 
-    path('exit/', views.exit, name='exit'),
+    path('exit/', favoritos.exit, name='exit'),
 ]
