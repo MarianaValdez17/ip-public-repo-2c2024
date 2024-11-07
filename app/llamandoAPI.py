@@ -4,7 +4,7 @@ def llamando_api(llamandoApi):
       "count": 826,
       "pages": 42,
       "next": "https://rickandmortyapi.com/api/character?page=2",
-      "prev": null
+      "prev": None
 
     },
     "results": [
