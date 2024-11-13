@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from . import favoritos
+#from . import favoritos
+from app.views import favoritos
 
 urlpatterns = [
     path('', favoritos.index_page, name='index-page'),
